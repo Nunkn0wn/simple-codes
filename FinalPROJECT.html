@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ItachiAnime</title>
+    <style>
+      body {
+        color: 0;
+        background: radial-gradient(
+          circle at 50.4% 50.5%,
+          rgb(251, 32, 86) 0%,
+          rgb(135, 2, 35) 90%
+        );
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 38px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        color: #000000;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #000000;
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 20px 0 10px;
+        color: #000000;
+      }
+
+      .read-more {
+        display: block;
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+      }
+
+      .read-more:hover {
+        font-size: 18px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background-color: rgb(56, 50, 50);
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .footer {
+        text-align: center;
+        font-size: 15px;
+        color: #000000;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 50px;
+      }
+    </style>
+
+    <body>
+      <div class="container">
+        <h1>Why is Itachi Uchiha the best character in Naruto?</h1>
+        <h2>What makes him so good of a character?🤨</h2>
+        <hr />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/007/original/itachiiii.jpg?1684940517"
+          alt="Itachi Uchiha"
+          width="600px"
+        />
+        <hr />
+        <p>
+          <strong>Itachi Uchiha</strong> is considered a good character in the
+          Naruto show for several reasons. One of the main reasons is his
+          complex and tragic backstory, which is revealed gradually throughout
+          the series. Itachi's past, including his childhood and his role in the
+          Uchiha clan massacre, makes him a multi-dimensional character that
+          viewers can sympathize with. Itachi's loyalty to his village and his
+          dedication to protecting it at all costs, even if it means making
+          personal sacrifices, is admirable. His actions, including his
+          involvement in the Uchiha clan massacre, are controversial, but they
+          are rooted in a desire to prevent a civil war that would have
+          devastated the village. Finally, Itachi's interactions with other
+          characters in the show, particularly his brother Sasuke, add depth to
+          his character and create emotional moments that resonate with viewers.
+          <strong>
+            <em>
+              All these factors make Itachi Uchiha a well-written and compelling
+              character in the Naruto show.</em
+            ></strong
+          >
+        </p>
+        <br />
+        <a
+          href="https://gamerant.com/why-is-itachi-uchiha-so-popular/"
+          target="_blank"
+          class="read-more"
+          >👉Read More at GameRant👈</a
+        >
+        <br />
+        <br />
+        <button>JOIN the Fan Club!🤓</button>
+        <p class="footer">
+          This page was built by
+          <a href="https://github.com/Nunkn0wn" target="_blank"
+            >Nathaly Navarro-Pena
+          </a>
+        </p>
+      </div>
+      <script>
+        function joinClub() {
+          let name = prompt("What is your name?");
+          let age = prompt("How old are you?");
+          if (age >= 16) {
+            let email = prompt("What is your email address?");
+            alert("Hi👋" + name + ", You are now a Member of the fan club!");
+          } else {
+            alert(
+              "Aw Looks like You arent old enough to Join😞Come back in a couple years👍"
+            );
+          }
+        }
+        let joinClubbutton = document.querySelector("button");
+        joinClubbutton.addEventListener("click", joinClub);
+      </script>
+    </body>
+  </head>
+</html>
